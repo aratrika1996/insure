@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.container-fluid {
+    padding: 0 12rem;
+}
+
+.divider {
+    width: 150px;
+    height: 1px;
+    margin-bottom: 5rem;
+}
+
+.hr-divider {
+    width: 100%;
+    height: 1px;
+    background-color: hsla(276, 4%, 51%, 0.267);
+    margin-bottom: 4rem;
+}
+
+.navbar {
+    padding: 1.5rem 0;
+    background-color: white;
+}
+
+.logo {
+    height: 2rem;
+}
+
+.nav-item {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 1rem;
+    color: hsl(0, 0%, 98%);
+    letter-spacing: .1rem;
+}
+
+.light-btn {
+    border-color: hsl(256, 26%, 20%);
+    border-radius: 0;
+    border-width: 1px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(256, 26%, 20%);
+    margin-left: 1rem;
+    padding: .8rem 2rem;
+    letter-spacing: .1rem;
+}
+
+.vio:hover {
+    background-color: hsl(256, 26%, 20%);
+}
+
+#title {
+    background-color: hsl(256, 26%, 20%);
+    color: hsl(0, 0%, 98%);
+    height: 56rem;
+    margin-bottom: 30rem;
+    position: relative;
+}
+
+.title-content {
+    padding: 8rem 0;
+}
+
+#title .divider {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.heading {
+    font-family: 'DM Serif Display', serif;
+    font-size: 7rem;
+    margin-right: 5rem;
+    line-height: 6rem;
+}
+
+.description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 3rem 3rem 3rem 0;
+    letter-spacing: .08rem;
+}
+
+.dark-btn {
+    border-color: hsl(0, 0%, 98%);
+    border-radius: 0;
+    border-width: 1px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 98%);
+    padding: .8rem 2rem;
+    letter-spacing: .1rem;
+}
+
+.title-image {
+    float: right;
+    /* width: 100%;
+    height: 55rem; */
+}
+
+.bg-right-ds {
+    height: 48rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.bg-left-ds {
+    height: 50rem;
+    position: absolute;
+    top: 70%;
+    left: 0;
+}
+
+#services {
+    margin-bottom: 15rem;
+}
+
+#services .divider {
+    background-color: hsl(216, 30%, 68%);
+}
+
+#services .heading {
+    color: hsl(270, 9%, 17%);
+}
+
+.icon-container {
+    margin-top: 5rem;
+    padding-right: 4rem;
+}
+
+.icon {
+    height: 6.5rem;
+}
+
+.icon-heading {
+    font-size: 2.5rem;
+}
+
+.icon-info {
+    color: hsl(273, 4%, 51%);
+    font-size: 1.5rem;
+}
+
+.cf {
+    background: url("./images/bg-pattern-how-we-work-desktop.svg") no-repeat right/40% 100%hsl(256, 26%, 20%);
+    padding: 5rem 7rem;
+    position: relative;
+}
+
+#hww {
+    margin-bottom: 15rem;
+}
+
+#hww .heading {
+    color: hsl(0, 0%, 98%);
+    font-size: 5.5rem;
+    margin-right: 8rem;
+}
+
+#hww .btn {
+    float: right;
+}
+
+footer {
+    background: url("./images/bg-pattern-footer-desktop.svg") no-repeat -20px top/40% 58% hsl(0, 0%, 98%);
+}
+
+.footer-content {
+    padding: 7rem 0;
+}
+
+.branding {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.social-icon {
+    margin: 0 1rem;
+}
+
+.info-heading {
+    text-transform: uppercase;
+    color: hsl(273, 4%, 51%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-bottom: 2.5rem;
+}
+
+.info-link {
+    text-transform: uppercase;
+    color: hsl(256, 26%, 20%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-bottom: 1.2rem;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    html {
+        font-size: 31.25%;
+    }
+    body {
+        text-align: center;
+    }
+    .container-fluid {
+        padding: 0 5rem;
+    }
+    .navbar-nav {
+        padding: 5rem 0;
+    }
+    .nav-item {
+        padding: 4rem 0 0;
+    }
+    .nav-link {
+        color: hsl(0, 0%, 98%) !important;
+        font-size: 3.5rem;
+        letter-spacing: .3rem;
+    }
+    .navbar {
+        padding: 3rem 0;
+    }
+    .navbar-toggler {
+        border: none;
+    }
+    #navbarNav {
+        background: url("./images/bg-pattern-mobile-nav.svg") no-repeat left bottom/100% 35%hsl(270, 9%, 17%);
+        height: 0;
+        transition: all .7s ease-in;
+    }
+    #navbarNav .dark-btn {
+        font-size: 3.5rem;
+        width: 100%;
+        letter-spacing: .3rem;
+        padding: 3rem 0;
+    }
+    .logo {
+        height: 3rem;
+    }
+    .mobile-intro-image {
+        width: 100%;
+    }
+    .mobile-title-content {
+        background-color: hsl(256, 26%, 20%);
+        color: hsl(0, 0%, 98%);
+        position: relative;
+    }
+    .title-content {
+        padding: 15rem 0;
+    }
+    .heading {
+        position: relative;
+        margin-right: 0;
+        font-size: 9rem;
+        line-height: 9rem;
+        z-index: 99;
+    }
+    .description {
+        font-size: 2.8rem;
+        margin: 4rem 0;
+    }
+    .light-btn,
+    .dark-btn {
+        font-size: 2.8rem;
+        padding: 1.2rem 4rem;
+    }
+    .bg-right-ds {
+        height: 50rem;
+        top: 72%;
+        right: 0;
+    }
+    .bg-left-ds {
+        height: 30rem;
+        top: 0;
+        left: 0;
+    }
+    .divider {
+        margin: 0 auto 7rem;
+    }
+    #services {
+        padding: 20rem 0;
+        margin-bottom: 0;
+    }
+    .icon-container {
+        margin: 5rem 0;
+        padding-right: 0;
+    }
+    .icon {
+        height: 12rem;
+        margin-bottom: 4rem;
+    }
+    .icon-heading {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+    }
+    .icon-info {
+        font-size: 2.8rem;
+    }
+    #hww .heading {
+        font-size: 7.5rem;
+        margin: 0 0 6rem 0;
+    }
+    #hww .btn {
+        float: none;
+    }
+    .cf {
+        background: url("./images/bg-pattern-how-we-work-mobile.svg") no-repeat right top/50% 90%hsl(256, 26%, 20%);
+        padding: 12rem 5rem;
+    }
+    .branding {
+        display: block;
+    }
+    .social-icons {
+        margin-top: 5rem;
+    }
+    .info-heading {
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+    }
+    .info-link {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .cont {
+        margin-bottom: 5rem;
+    }
+    footer {
+        background: url("./images/bg-pattern-footer-mobile.svg") no-repeat left top/100% 15% hsl(0, 0%, 98%);
+    }
+    .footer-content {
+        padding: 15rem 0;
+    }
+}
