@@ -223,7 +223,7 @@
             ham.classList.add('d-none');
             close_menu.classList.remove('d-none');
             // console.log((screen.height - document.querySelector('nav').offsetHeight));
-            ex_nav.style.height = (screen.height - document.querySelector('nav').offsetHeight) + 'px';
+            ex_nav.style.height = (document.documentElement.clientHeight - document.querySelector('nav').offsetHeight) + 'px';
         })
         close_menu.addEventListener('click', function() {
             ham.classList.remove('d-none');
